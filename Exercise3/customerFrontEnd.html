@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>MaiMush Jujutsu Kaisen Store</title>
+</head>
+<body>
+    <div id="container">
+        <h1 id="header">Raven <b>JUJUTSU KAISEN</b> Figure Store</h1>
+        <div id="message"></div>
+        <form action="customerBackEnd.php" method="post" onsubmit="validate()" id="storeForm">
+            <div id="store">
+                <div class="item">
+                    <h2>Satoru Gojo Figure</h2>
+                    <img src="SatoruGojo.png" alt="">
+                    <p>Price: $30.00</p>
+                    Quantity: <input type="number" name="figure1" value="0" min="0">
+                </div>
+                <div class="item">
+                    <h2>Suguru Geto Figure</h2>
+                    <img src="SuguruGeto.png" alt="">
+                    <p>Price: $30.00</p>
+                    Quantity: <input type="number" name="figure2" value="0" min="0">
+                </div>
+                <div class="item">
+                    <h2>Sukuna Figure</h2>
+                    <img src="Sukuna.png" alt="">
+                    <p>Price: $30.00</p>
+                    Quantity: <input type="number" name="figure3" value="0" min="0">
+                </div>
+                <div class="item large-item">
+                    <h2>Login</h2>
+                    <div>
+                        <label for="username">Username:</label>
+                        <input type="email" name="username" id="username" required>
+                    </div>
+                    <div>
+                        <label for="username">Password:</label>
+                        <input type="password" name="password" id="password" required>
+                    </div>
+                    
+                    <h2>Shipping Options:</h2>
+                    <div id="shipping">
+                        <div>    
+                            <input type="radio" name="shipping" id="free" value="0" checked>
+                            <label for="free">Free 7 Day Shipping</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="shipping" id="rush" value="5">
+                            <label for="rush">$5.00 3 Day Shipping</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="shipping" id="overnight"
+                            value="50">
+                            <label for="overnight">$50.00 Overnight Shipping</label><br>
+                        </div>
+                        <input type="reset" value="Cancel Your Order">
+                        <input type="submit" value="Place Your Order">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="formChecker.js"></script>
+</body>
+</html>
